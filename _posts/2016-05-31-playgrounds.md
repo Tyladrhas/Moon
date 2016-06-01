@@ -5,11 +5,9 @@ date:   2016-05-31 20:20:20 +0800
 excerpt: "3D Modelling inside UDK. Adding longer text to see if that's what's needed"
 tag: [tag1, tag2]
 comments: true
+feature: http://i.imgur.com/goat4jn.jpg
 ---
-
-## wooo
 <p>Throwback blog from the old days.</p>
-![alt text](http://i.imgur.com/goat4jn.jpg "Just looks nice")
 
 <p>Just some more asset creation going on here. Firstly I did a little update to the trees from before, realised there were some faces in the wrong direction, so I just flipped the normals on them, after removing some unneeded extra polys, and also did a re-texturing, to make it look a bit better!</p>
 ![alt text](http://i.imgur.com/0qlyyUQ.jpg "Tree")
