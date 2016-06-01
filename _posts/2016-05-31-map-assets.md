@@ -3,6 +3,8 @@ layout: post
 title:  "Map Assets"
 date:   2016-05-31 15:15:01 +0800
 excerpt: "Map and assets within Unity"
+tag: [Game Dev]
+comments: true
 ---
 
 ![alt text](http://i.imgur.com/xIWhMEh.jpg "Blank Map")

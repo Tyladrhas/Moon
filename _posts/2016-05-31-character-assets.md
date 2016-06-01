@@ -3,6 +3,8 @@ layout: post
 title:  "Character Assets"
 date:   2016-05-31 15:30:01 +0800
 excerpt: "Character texture mapping within Maya."
+tag: [Game Dev]
+comments: true
 ---
 
 <p>Throwback blog from the old days.</p>
