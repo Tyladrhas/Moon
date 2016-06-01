@@ -7,7 +7,6 @@ tag: [tag1, tag2]
 comments: true
 ---
 
-## ohhhyeahhh
 <p>Throwback blog from the old days.</p>
 <p>Yes! Trees!</p>
 <p>So, those pretty looking things in the background is largely what I did today.</p>
