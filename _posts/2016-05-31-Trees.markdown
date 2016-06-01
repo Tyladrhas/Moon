@@ -1,0 +1,60 @@
+---
+layout: post
+title:  The Trees
+date:   2016-05-31 20:20:20 +0800
+excerpt: "3D Modelling in Blender and Implimenting in UDK."
+tag: [tag1, tag2]
+comments: true
+---
+
+## ohhhyeahhh
+<p>Throwback blog from the old days.</p>
+<p>Yes! Trees!</p>
+<p>So, those pretty looking things in the background is largely what I did today.</p>
+<p>In the couple of days prior to this though, I've been struggling my way through import issues that I just couldn't put my finger on...</p>
+
+<p>The short of it, was that each time I finished animating a mesh in blender, and exported it into UDK, UDK would crash. I tried different amounts of armature, having them connected, not having them connected, changing the names, everything I could think of or look up.</p>
+<p>In the end, I solved the problem largely by a fluke, it turns out that udk doesn't like it when you haven't auto assigned weights to your armature. So, basically if you do your own weighting, (which you mostly need to do) it crashes when you import your model.</p>
+
+<p>The way around this, thankfully, was really easy, just once you've finished assigning your weighting, you re-parent it with automatic weighting in blender again, and it just goes with what you've already chosen. Bam, problem solved.</p>
+
+<p>So, after finally fixing that, I animated my previous mesh, which you can also see in that above picture, the traffic cones and tape, the tape now wafts from side to side, as if in a gentle breeze. Nothing major, but it's the little additions like that to otherwise static meshes that I think will help bring life to the game world, making it more vibrant and pleasing to the eyes, at least that's the theory!</p>
+
+<p>So, onto the development for today.</p>
+
+![alt text](http://i.imgur.com/li2FfD6.jpg "Prototype")
+
+<p>The tree started off as a simple cylinder, which I just built out from, using mostly extrude, translate, rotate and scale, to change its size, length and direction. Making the branch diversions was a little bit tricky at the start, but after the first one I started to get a good feel for it, putting more edges in to shape them, and making the splits more natural seeming.</p>
+
+![alt text](http://i.imgur.com/xb0r5N7.jpg "Growing")
+
+![alt text](http://i.imgur.com/bYoLCeR.jpg "Still growing")
+
+![alt text](http://i.imgur.com/qOPMHS9.jpg "Eerie")
+
+<p>That was the general progression of the tree, all modelling there was done with the methods mentioned above, as I got further along I got a bit more creative with the shapes, and lowered my polygon usage too, which was a bit large in the earlier branches.</p>
+
+<p>Next up I made some leaves.</p>
+
+![alt text](http://i.imgur.com/9qxXFL8.jpg "Leaf")
+
+<p>Originally the leaf was a leaf shaped polygon, which I quickly realised was as ridiculous waste of polys, I changed to a plane with backface culling disabled, and put a leaf texture over it, and cleared out the alpha channel, slapped a normal map behind that, and it gave an easy, nice looking leaf.</p>
+
+![alt text](http://i.imgur.com/zAk7ZW1.jpg "Leaves")
+
+<p>Since placing one leaf at a time would be insane, I build up some leaf sheets similar to this one, and cris-crossed them over eachother, to build up a bulky, leafy mass.</p>
+
+![alt text](http://i.imgur.com/t4Y8a6C.jpg "A tree")
+
+<p>After spreading the leaf clusters around, this was the result, much better foliage. I quickly realised however, that because of how I had done it (copy paste, copy paste) my model was trying to load the same texture file for each leaf individually, (over 2000 times). So i removed all those, and connected the one texture to the overall UV of the group, which worked out fine, and stopped it crashing my computer!</p>
+![alt text](http://i.imgur.com/ETbURWf.jpg "Textured")
+
+<p>Next up was the tree texture, snagged some textures from some tree photos, put a normal map behind that, and was pretty happy with the result.</p>
+
+<p>With that, I exported the model and crossed over into UDK.</p>
+
+<p>Getting the trees to work there was relatively painless, the only thing I didn't know was changing the material type to activate the opacity option. Once that was done, it all went seamlessly. So I placed a few trees around to join our robot and wet cement box, and called it a day!</p>
+
+![alt text](http://i.imgur.com/hzmfdGv.jpg "Implemented")
+
+<p>Good times, great memories! :P</p>
