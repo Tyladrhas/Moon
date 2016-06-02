@@ -2,7 +2,7 @@
 layout: post
 title:  Playgrounds and maps
 date:   2016-05-31 20:20:20 +0800
-excerpt: "3D Modelling inside UDK. Adding longer text to see if that's what's needed"
+excerpt: "3D Modelling with Blender, texturing within GIMP, implemented into UDK."
 tag: [Game Dev]
 comments: true
 feature: http://i.imgur.com/goat4jn.jpg
