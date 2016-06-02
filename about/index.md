@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
+title: About this website.
+tags: [about]
 date: 2016-03-21
 ---
     
